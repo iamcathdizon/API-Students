@@ -61,7 +61,7 @@
         $course = $value['course'];
         $contact = $value['contact'];
         $address = $value['address'];
-        $query = "UPDATE students SET name = '$name', '$course','$contact','$address' = '$course' WHERE id = '$id',name = '$name','$course','$contact','$address'";
+        $query = "UPDATE students SET name = '$name', course = '$course', contact ='$contact', address = '$address'  WHERE id = '$id'";
         $update = mysqli_query($conn,$query);
 
 
